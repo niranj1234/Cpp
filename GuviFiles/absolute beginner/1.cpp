@@ -11,3 +11,17 @@
 // GUVI
 // Sample Output :
 // IVUG
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    string in;
+    cin >> in;
+    reverse(in.begin(), in.end());
+    cout<< in;
+    cout << endl;
+    return 0;
+}
