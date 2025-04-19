@@ -36,13 +36,15 @@ int main() {
             case 10:
             case 12:
             cout << 31 <<endl;
-            break;    
+            break;   
+            
             case 4:
             case 6:
             case 9: 
             case 11:
             cout << 30 << endl;
             break;
+            
         case 2: 
         cout << 28 << std::endl;
         break;
