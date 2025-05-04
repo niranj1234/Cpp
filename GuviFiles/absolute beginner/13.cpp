@@ -19,7 +19,7 @@
 #include <iomanip>
 using namespace std;
 int main() {
-    int a;
+    double a;
     double fact;
     cin >> a;
 fact = 2*M_PI*a; 
