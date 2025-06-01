@@ -21,7 +21,7 @@ int main() {
 
     string word1 = S.substr(0, space_pos);
 
-    std::cout << word2 << " " << word1 << std::endl;
+    cout << word2 << " " << word1 << std::endl;
 
     return 0; 
 }
