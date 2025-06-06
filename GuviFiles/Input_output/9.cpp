@@ -29,6 +29,7 @@ int main() {
     // Print the values in the same format
     for( int i = 0; i< in.length(); ++i){
         cout<< in[i];
+        //another method cout<< in[i]<<endl;
         if(i!=in.length()-1){
             cout<<"\n";
         }
