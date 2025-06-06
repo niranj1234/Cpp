@@ -34,7 +34,8 @@ int main() {
     d = pow(b,2) - 4*a*c;
     double root1, root2;
     
-    root1 = (-b + pow(d,0.5))/(2*a);
+    // root1 = (-b + pow(d,0.5))/(2*a);
+    root1 = (-b + sqrt(d))/(2*a);
     root2 = (-b -  pow(d,0.5))/(2*a);
     
 
