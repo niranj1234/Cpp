@@ -1,30 +1,10 @@
 // https://leetcode.com/problems/reverse-integer/
 
-
 #include <string>
 #include <limits.h>
 #include <iostream>
 using namespace std;
 
-// class Solution {
-// public:
-//     int reverse(int x) {
-//         if(x == 0) return 0;
-//         int sign = x < 0 ? -1 : 1;
-//         x = abs(x);
-//         long long reversed = 0;
-//         while (x > 0) {
-//             reversed = reversed * 10 + x % 10;
-//             x /= 10;
-//             if (reversed < INT_MIN || reversed > INT_MAX) return 0; 
-//         }
-//         return sign * reversed;
-//     }
-
-    // string b = to_string(x);
-
-
-// };
 class Solution {
 public:
     int reverse(int x) {
