@@ -29,7 +29,7 @@ int main() {
 sort(b.begin(), b.end());
     
     for (size_t i = 0; i < b.length(); i++) {
-        int c = b[i] - '0'; 
+        int c = b[i] - '0'; //Converts each character in b into its corresponding integer value using b[i] - '0'.
         if (c % 2 == 0) {
             even.push_back(c); 
         }
