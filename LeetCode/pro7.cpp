@@ -1,3 +1,4 @@
+// LeetCode problem number: 7
 // https://leetcode.com/problems/reverse-integer/
 
 #include <string>
@@ -5,6 +6,25 @@
 #include <iostream>
 using namespace std;
 
+// class Solution {
+// public:
+//     int reverse(int x) {
+//         if(x == 0) return 0;
+//         int sign = x < 0 ? -1 : 1;
+//         x = abs(x);
+//         long long reversed = 0;
+//         while (x > 0) {
+//             reversed = reversed * 10 + x % 10;
+//             x /= 10;
+//             if (reversed < INT_MIN || reversed > INT_MAX) return 0; 
+//         }
+//         return sign * reversed;
+//     }
+
+    // string b = to_string(x);
+
+
+// };
 class Solution {
 public:
     int reverse(int x) {
@@ -32,7 +52,7 @@ int main() {
     
     // Test case 2: Negative number
     cout << "\nInput: x = -123" << endl;
-    cout << "Output: " << solution.reverse(-123) << endl;  // Expected output: -321
+    cout << "Output: " << solution.reverse(-123) << endl;  // Expected output: -321Add commentMore actions
     
     // Test case 3: Number with trailing zeros
     cout << "\nInput: x = 120" << endl;
@@ -44,3 +64,4 @@ int main() {
     
     return 0;
 }
+
