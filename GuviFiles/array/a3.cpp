@@ -42,8 +42,11 @@ int main() {
     
     sort(freqVec.begin(), freqVec.end(), compare);
     
-    for (const auto& pair : freqVec) {
-        cout << pair.first << " ";
+    for (size_t i = 0; i < freqVec.size(); ++i) {
+        cout << freqVec[i].first;
+        if (i < freqVec.size() - 1) {
+            cout << " ";
+        }
     }
     
     cout << endl;
