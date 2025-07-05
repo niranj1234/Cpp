@@ -1,5 +1,4 @@
-// https://leetcode.com/problems/move-zeroes/description/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days
-
+// https://leetcode.com/problems/move-zeroes/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days
 
 class Solution {
 public:
