@@ -17,16 +17,24 @@
 
 using namespace std;
 int main() {
-
 int a;
 cin >> a;
     string b = to_string(a);
-for(size_t i=0; i< b.length(); i++){
-    cout<<b[i];
-    if(i<b.length()-1){
-        cout<<" ";
+// for(size_t i=0; i< b.length(); i++){
+//     cout<<b[i];
+//     if(i<b.length()-1){
+//         cout<<" ";
+//     }
+// }
+    int current_index = 0; 
+    for (char ax : b) {
+        int c = ax - '0'; 
+        cout << c;        
+        if (current_index < b.length() - 1) {
+            cout << " ";
+        }
+        current_index++; 
     }
-}
-cout<<endl;
-return 0;
+    cout << endl;
+    return 0;
 }
