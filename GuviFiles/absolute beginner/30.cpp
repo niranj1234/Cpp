@@ -12,16 +12,37 @@
 // Sample Output :
 // IVUG
 
+
+
 #include <iostream>
 #include <string>
-#include <algorithm>
 using namespace std;
 
 int main() {
-    string in;
-    cin >> in;
-    reverse(in.begin(), in.end());
-    cout<< in;
-    cout << endl;
+    string s;
+    cin >> s;
+
+    int left = 0, right = s.length() - 1;
+    while (left < right) {
+        swap(s[left], s[right]); // swaps in place, no temp variable needed
+        left++;
+        right--;
+    }
+
+    cout << s << endl;
     return 0;
 }
+
+// #include <iostream>
+// #include <string>
+// #include <algorithm>
+// using namespace std;
+
+// int main() {
+//     string in;
+//     cin >> in;
+//     reverse(in.begin(), in.end());
+//     cout<< in;
+//     cout << endl;
+//     return 0;
+// }
