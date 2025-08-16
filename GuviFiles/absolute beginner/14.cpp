@@ -27,3 +27,19 @@ cout<< a.length()<<endl;
 
 return 0;
 }
+
+
+/*
+ime Complexity
+remove → O(n) (scans through the string once, moving characters as needed)
+
+erase → O(1) amortized (shrinks the container end)
+
+length() → O(1)
+
+Total: O(n)
+
+Space Complexity
+In-place operation: no extra string copy, only iterators used
+
+O(1) extra space (besides the input string itself)*/

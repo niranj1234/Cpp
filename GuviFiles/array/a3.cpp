@@ -53,3 +53,25 @@ int main() {
     
     return 0;
 }
+
+/*
+Reading input into arr → O(n)
+Building freqMap: Inserting n elements into unordered_map → O(1) average per insert → total O(n)
+Creating freqVec from freqMap → O(k), where k = number of unique elements (k ≤ n)
+
+Sorting freqVec: O(k log k) comparisons
+Printing results → O(k)
+
+Total average case:
+O(n) + O(n) + O(k) + O(k log k) + O(k)  
+→ O(n + k log k)
+Worst case (unordered_map hash collisions) could be O(n²), but very rare.
+
+Space Complexity
+arr vector → O(n)
+freqMap → O(k)
+freqVec → O(k)
+
+Total space: O(n + k) → O(n)
+(where k ≤ n). 
+*/
